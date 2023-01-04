@@ -8,6 +8,7 @@
   /* --- COLOR PALETTE --- */
   --light-cyan: hsl(193, 38%, 86%);
   --neon-green: hsl(150, 100%, 66%);
+  --red: hsl(0, 100%, 75%);
   --blue: hsl(240, 100%, 50%);
   --dark-grayish-blue: hsl(217, 19%, 24%);
   --dark-blue: hsl(218, 23%, 16%);
@@ -42,7 +43,6 @@ body {
   letter-spacing: 2px;
   font-size: 0.4rem;
   font-weight: var(--light);
-  color: var(--neon-green);
   margin-top: 1rem;
 }
 
@@ -62,13 +62,21 @@ body {
   border: none;
   border-radius: 50%;
   padding: 0.5rem;
-  height: 85%;
+  height: 80%;
   margin: 1rem auto -1rem;
 }
 
 .get-advice:hover {
   cursor: pointer;
   box-shadow: 0 0 18px 3px var(--neon-green);
+}
+
+.success {
+  color: var(--neon-green);
+}
+
+.error {
+  color: var(--red);
 }
 
 .attribution {
